@@ -6,7 +6,7 @@ type Props = {
 };
 export const ErrorMessage = ({text}: Props) => {
     return (
-        <View style={styles.wrapper}>
+        <View style={styles.wrapper} testID="error">
             <Text>{text}</Text>
         </View>
     );

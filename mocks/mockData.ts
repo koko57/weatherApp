@@ -1,4 +1,4 @@
-import {mapWeatherData} from '../utils/mapWeatherData';
+import {mapWeatherData} from '../src/utils/mapWeatherData';
 
 export const mockResponse = {
     cnt: 2,

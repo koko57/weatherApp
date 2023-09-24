@@ -13,8 +13,8 @@ export const useWeatherData = () => {
     const fetchData = async () => {
         try {
             setLoading(true);
-            const data = await fetchWeatherData(CITIES_LIST);
-            const mappedData = mapWeatherData(data);
+            const responseData = await fetchWeatherData(CITIES_LIST);
+            const mappedData = mapWeatherData(responseData);
             setData(mappedData);
             setLoading(false);
         } catch (err) {

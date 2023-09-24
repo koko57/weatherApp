@@ -12,7 +12,7 @@ const mainInfo = {
 
 describe('MainInfo component', () => {
     it('should render the component with proper values', () => {
-        render(<MainInfo {...mainInfo} />);
+        render(<MainInfo testID={''} {...mainInfo} />);
 
         expect(screen.getByText(mainInfo.name)).toBeTruthy();
     });

@@ -1,5 +1,5 @@
 import {mapWeatherData} from '../../utils/mapWeatherData';
-import {mockResponse} from '../mockData';
+import {mockResponse} from '../../../mocks/mockData';
 
 const cityData = mockResponse.list[0];
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {fireEvent, render, screen} from '@testing-library/react-native';
 
 import {ListItem} from '../../components/ListItem';
-import {mappedMockedData} from '../mockData';
+import {mappedMockedData} from '../../../mocks/mockData';
 
 const props = mappedMockedData[0];
 
@@ -20,14 +20,14 @@ jest.mock('@react-navigation/native', () => {
 
 describe('ListItem component', () => {
     it('should render with proper values', () => {
-        render(<ListItem {...props} />);
+        render(<ListItem testID={''} {...props} />);
 
         const button = screen.getByText('Paris');
         expect(button).toBeOnTheScreen();
     });
 
     it('should fire navigate fn onPress', () => {
-        render(<ListItem {...props} />);
+        render(<ListItem testID={''} {...props} />);
 
         const button = screen.getByText('Paris');
         fireEvent.press(button);
