@@ -1,0 +1,39 @@
+# Ignore the node_modules directory
+node_modules
+
+# Ignore build or output directories
+build
+dist
+ios/build
+android/app/build
+android/build
+
+# Ignore Xcode files
+vendor
+
+# Ignore platform-specific files or directories
+ios/Pods
+ios/Podfile.lock
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.bundle.meta
+android/app/src/main/assets/index.android.bundle.map
+android/app/src/main/assets/index.android.bundle.meta
+ios/**/*.json
+
+# Ignore generated or binary files
+*.snap
+*.apk
+*.ipa
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Ignore source control files or directories
+.git
+.gitignore
+*.gitkeep
+
+# Ignore temporary files or directories
+.DS_Store
+.env
