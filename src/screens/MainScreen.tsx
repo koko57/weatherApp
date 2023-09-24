@@ -36,7 +36,7 @@ export const MainScreen = () => {
                     return <ListItem {...item} testID={`listItem-${index}`} />;
                 }}
             />
-            <NotificationButton onPress={onButtonPress} />
+            {/*<NotificationButton onPress={onButtonPress} />*/}
         </View>
     );
 };

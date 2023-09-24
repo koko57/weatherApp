@@ -13,19 +13,19 @@ type ButtonProps = {
     testID: string;
 };
 
-const Button = requireNativeComponent<ButtonProps>('NotificationButton');
+// const Button = requireNativeComponent<ButtonProps>('NotificationButton');
 
 type NotificationButtonProps = Pick<ButtonProps, 'onPress'>;
 
 export const NotificationButton = ({onPress}: NotificationButtonProps) => {
-    return (
-        <Button
-            style={styles.button}
-            text="Notify me!"
-            onPress={onPress}
-            testID="notificationButton"
-        />
-    );
+    // return (
+    //     <Button
+    //         style={styles.button}
+    //         text="Notify me!"
+    //         onPress={onPress}
+    //         testID="notificationButton"
+    //     />
+    // );
 };
 
 const styles = StyleSheet.create({
