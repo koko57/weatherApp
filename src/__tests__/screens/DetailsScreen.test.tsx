@@ -21,6 +21,7 @@ const mockRoute = {
 describe('DetailsScreen Integration Tests', () => {
     it('renders DetailsScreen with data', () => {
         const {getByTestId, getByText} = render(
+            // @ts-ignore
             <DetailsScreen route={mockRoute} />,
         );
 
