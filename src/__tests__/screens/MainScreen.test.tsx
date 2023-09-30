@@ -1,7 +1,7 @@
 import React from 'react';
 import {rest} from 'msw';
 import {server} from '../../../mocks/server';
-import {render, waitFor, fireEvent} from '@testing-library/react-native';
+import {render, waitFor} from '@testing-library/react-native';
 import {MainScreen} from '../../screens/MainScreen';
 import {BASE_URL} from '../../api/constants';
 
