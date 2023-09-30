@@ -3,8 +3,11 @@ import {NativeModules} from 'react-native';
 class NotificationModuleInterface {
     static showAppNotification(title: string, body: string) {
         const module = NativeModules.MyNotification;
-
-        module.showNotification(title, body);
+        try {
+            module.showNotification(title, body);
+        } catch (e) {
+            console.log(e);
+        }
     }
 }
 

@@ -14,6 +14,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-weatherApp-weatherAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-weatherApp-weatherAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C38EEA6B2AC80F0C00255E26 /* MyNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = C38EEA6A2AC80F0C00255E26 /* MyNotification.m */; };
+		C38EEA6E2AC811F700255E26 /* RNCKCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C38EEA6D2AC811F700255E26 /* RNCKCustomButton.m */; };
+		C38EEA712AC8126000255E26 /* RNCKCustomButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C38EEA702AC8126000255E26 /* RNCKCustomButtonViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-weatherApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weatherApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = weatherApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-weatherApp-weatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherApp-weatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-weatherApp-weatherAppTests/Pods-weatherApp-weatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C38EEA692AC80ED900255E26 /* MyNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNotification.h; sourceTree = "<group>"; };
+		C38EEA6A2AC80F0C00255E26 /* MyNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNotification.m; sourceTree = "<group>"; };
+		C38EEA6C2AC811C500255E26 /* RNCKCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCKCustomButton.h; sourceTree = "<group>"; };
+		C38EEA6D2AC811F700255E26 /* RNCKCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCKCustomButton.m; sourceTree = "<group>"; };
+		C38EEA6F2AC8122800255E26 /* RNCKCustomButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCKCustomButtonViewManager.h; sourceTree = "<group>"; };
+		C38EEA702AC8126000255E26 /* RNCKCustomButtonViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCKCustomButtonViewManager.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -116,6 +125,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C38EEA692AC80ED900255E26 /* MyNotification.h */,
+				C38EEA6C2AC811C500255E26 /* RNCKCustomButton.h */,
+				C38EEA6D2AC811F700255E26 /* RNCKCustomButton.m */,
+				C38EEA6F2AC8122800255E26 /* RNCKCustomButtonViewManager.h */,
+				C38EEA702AC8126000255E26 /* RNCKCustomButtonViewManager.m */,
+				C38EEA6A2AC80F0C00255E26 /* MyNotification.m */,
 				13B07FAE1A68108700A75B9A /* weatherApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* weatherAppTests */,
@@ -412,7 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38EEA6B2AC80F0C00255E26 /* MyNotification.m in Sources */,
+				C38EEA712AC8126000255E26 /* RNCKCustomButtonViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				C38EEA6E2AC811F700255E26 /* RNCKCustomButton.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
