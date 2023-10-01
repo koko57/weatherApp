@@ -5,16 +5,55 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-    name: Build iOS and test with Maestro
+  ios-build:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Pods
-        working-directory: ios
-        run: pod install
-      - run: xcodebuild build -scheme 'weatherApp' -configuration Debug -project 'weatherApp.xcodeproj' -destination 'generic/platform=iOS Simulator' CONFIGURATION_BUILD_DIR=$PWD/build
-      - uses: mobile-dev-inc/action-maestro-cloud@v1
+      - name: Pull dependencies
+        uses: actions/cache@v3
         with:
-          api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
-          app-file: build/weatherApp.app
+          path: ./node_modules
+          key: ${{ hashFiles('./package.json') }}
+
+      - name: Cache example node modules
+        id: cache-example-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cached-example-npm-deps
+        with:
+          path: example/node_modules
+          key: ${{ hashFiles('./yarn.lock') }}
+
+      - name: Install required example dependencies on yarn.lock change
+        if: steps.cache-npm.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
+      - name: Cache Pods
+        id: cache-pods
+        uses: actions/cache@v3
+        env:
+          cache-name: cached-ios-pods-deps
+        with:
+          path: ./ios/Pods
+          key: ${{ hashFiles('./ios/Podfile.lock') }}
+
+      - name: Install example Pods
+        run: pod install
+        working-directory: ios
+
+      - name: Install Maestro CLI
+        run: |
+          curl -Ls "https://get.maestro.mobile.dev" | bash
+          brew tap facebook/fb
+          brew install facebook/fb/idb-companion
+
+      - name: Add Maestro to path
+        run: echo "${HOME}/.maestro/bin" >> $GITHUB_PATH
+
+      - name: Build iOS App
+        run: |
+          yarn ios
+
+      - name: Run tests
+        run: |
+          yarn maestro
