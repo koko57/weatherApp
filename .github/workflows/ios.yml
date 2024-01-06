@@ -46,8 +46,8 @@ jobs:
 
       - name: Build iOS App
         run: |
-          yarn run ios
+          yarn ios
 
       - name: Run tests
         run: |
-          yarn test:e2e:ios
+          yarn maestro
