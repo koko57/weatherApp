@@ -8,7 +8,8 @@
         "lint": "eslint .",
         "start": "react-native start",
         "test": "jest --detectOpenHandles",
-        "prettier": "prettier . --write"
+        "prettier": "prettier . --write",
+        "maestro": ".maestro test .maestro/flow.yaml"
     },
     "dependencies": {
         "@react-navigation/native": "^6.1.7",
