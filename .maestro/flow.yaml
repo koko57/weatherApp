@@ -1,4 +1,4 @@
-appId: "org.reactjs.native.example.weatherApp"
+appId: "com.example.weatherApp"
 ---
 - launchApp
 - tapOn:
