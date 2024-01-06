@@ -1,4 +1,4 @@
-appId: "com.example.weatherApp"
+appId: "com.example.weatherapp"
 ---
 - launchApp
 - tapOn:
