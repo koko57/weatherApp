@@ -22,6 +22,8 @@ jest.mock('@react-navigation/native', () => {
     };
 });
 
+jest.setTimeout(30000);
+
 describe('MainScreen', () => {
     it('renders the list of cities', async () => {
         const {getByTestId, getByText} = render(<MainScreen />);

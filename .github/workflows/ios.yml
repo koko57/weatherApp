@@ -46,7 +46,7 @@ jobs:
 
       - name: Build iOS App
         run: |
-          yarn run-example-ios
+          yarn run ios
 
       - name: Run tests
         run: |
