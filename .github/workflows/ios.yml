@@ -1,0 +1,53 @@
+name: iOS Build
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/ios.yml'
+      - 'ios/**'
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}-ios
+  cancel-in-progress: true
+
+jobs:
+  ios-build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/install-dependencies
+
+      - name: Cache Pods
+        id: cache-pods
+        uses: actions/cache@v3
+        env:
+          cache-name: cached-ios-pods-deps
+        with:
+          path: ios/Pods
+          key: ${{ hashFiles('./ios/Podfile.lock') }}
+
+      - name: Install example Pods
+        run: NO_FLIPPER=1 pod install
+        working-directory: ios
+
+      - name: Install Maestro CLI
+        run: |
+          curl -Ls "https://get.maestro.mobile.dev" | bash
+          brew tap facebook/fb
+          brew install facebook/fb/idb-companion
+
+      - name: Add Maestro to path
+        run: echo "${HOME}/.maestro/bin" >> $GITHUB_PATH
+
+      - name: Build iOS App
+        run: |
+          yarn run-example-ios
+
+      - name: Run tests
+        run: |
+          yarn test:e2e:ios
