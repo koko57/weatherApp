@@ -1,0 +1,162 @@
+[
+  {
+    "cloudCover": 100,
+    "conditions": "overcast clouds",
+    "humidity": 93,
+    "iconUrl": "https://openweathermap.org/img/wn/04d@2x.png",
+    "name": "Paris",
+    "pressure": 1009,
+    "temp": "1.8",
+    "windSpeed": 5.14
+  },
+  {
+    "cloudCover": 100,
+    "conditions": "fog",
+    "humidity": 97,
+    "iconUrl": "https://openweathermap.org/img/wn/50d@2x.png",
+    "name": "Madrid",
+    "pressure": 1014,
+    "temp": "9.8",
+    "windSpeed": 3.6
+  },
+  {
+    "cloudCover": 0,
+    "conditions": "clear sky",
+    "humidity": 87,
+    "iconUrl": "https://openweathermap.org/img/wn/01n@2x.png",
+    "name": "Los Angeles",
+    "pressure": 1018,
+    "temp": "10.4",
+    "windSpeed": 0
+  },
+  {
+    "cloudCover": 0,
+    "conditions": "clear sky",
+    "humidity": 54,
+    "iconUrl": "https://openweathermap.org/img/wn/01n@2x.png",
+    "name": "Boston",
+    "pressure": 1020,
+    "temp": "-5.0",
+    "windSpeed": 5.14
+  },
+  {
+    "cloudCover": 100,
+    "conditions": "overcast clouds",
+    "humidity": 47,
+    "iconUrl": "https://openweathermap.org/img/wn/04n@2x.png",
+    "name": "New York",
+    "pressure": 1023,
+    "temp": "-4.5",
+    "windSpeed": 6.17
+  },
+  {
+    "cloudCover": 40,
+    "conditions": "scattered clouds",
+    "humidity": 68,
+    "iconUrl": "https://openweathermap.org/img/wn/03d@2x.png",
+    "name": "Singapore",
+    "pressure": 1007,
+    "temp": "30.1",
+    "windSpeed": 6.17
+  },
+  {
+    "cloudCover": 75,
+    "conditions": "broken clouds",
+    "humidity": 70,
+    "iconUrl": "https://openweathermap.org/img/wn/04d@2x.png",
+    "name": "Krakow",
+    "pressure": 995,
+    "temp": "1.6",
+    "windSpeed": 8.75
+  },
+  {
+    "cloudCover": 40,
+    "conditions": "scattered clouds",
+    "humidity": 73,
+    "iconUrl": "https://openweathermap.org/img/wn/03d@2x.png",
+    "name": "Wroclaw",
+    "pressure": 997,
+    "temp": "1.7",
+    "windSpeed": 7.72
+  },
+  {
+    "cloudCover": 2,
+    "conditions": "clear sky",
+    "humidity": 83,
+    "iconUrl": "https://openweathermap.org/img/wn/01d@2x.png",
+    "name": "London",
+    "pressure": 1008,
+    "temp": "-0.5",
+    "windSpeed": 2.68
+  },
+  {
+    "cloudCover": 56,
+    "conditions": "broken clouds",
+    "humidity": 93,
+    "iconUrl": "https://openweathermap.org/img/wn/04d@2x.png",
+    "name": "Oslo",
+    "pressure": 994,
+    "temp": "-14.3",
+    "windSpeed": 1.68
+  },
+  {
+    "cloudCover": 75,
+    "conditions": "broken clouds",
+    "humidity": 84,
+    "iconUrl": "https://openweathermap.org/img/wn/04d@2x.png",
+    "name": "Berlin",
+    "pressure": 979,
+    "temp": "2.2",
+    "windSpeed": 11.18
+  },
+  {
+    "cloudCover": 75,
+    "conditions": "broken clouds",
+    "humidity": 87,
+    "iconUrl": "https://openweathermap.org/img/wn/04d@2x.png",
+    "name": "Copenhagen",
+    "pressure": 985,
+    "temp": "-1.5",
+    "windSpeed": 7.72
+  },
+  {
+    "cloudCover": 40,
+    "conditions": "mist",
+    "humidity": 75,
+    "iconUrl": "https://openweathermap.org/img/wn/50d@2x.png",
+    "name": "Rome",
+    "pressure": 1004,
+    "temp": "12.0",
+    "windSpeed": 2.57
+  },
+  {
+    "cloudCover": 0,
+    "conditions": "clear sky",
+    "humidity": 36,
+    "iconUrl": "https://openweathermap.org/img/wn/01d@2x.png",
+    "name": "Luxor",
+    "pressure": 1023,
+    "temp": "18.3",
+    "windSpeed": 3.22
+  },
+  {
+    "cloudCover": 0,
+    "conditions": "clear sky",
+    "humidity": 70,
+    "iconUrl": "https://openweathermap.org/img/wn/01d@2x.png",
+    "name": "Buenos Aires",
+    "pressure": 1011,
+    "temp": "14.1",
+    "windSpeed": 3.17
+  },
+  {
+    "cloudCover": 40,
+    "conditions": "scattered clouds",
+    "humidity": 93,
+    "iconUrl": "https://openweathermap.org/img/wn/03n@2x.png",
+    "name": "Reykjavik",
+    "pressure": 1022,
+    "temp": "-6.2",
+    "windSpeed": 1.54
+  }
+]
