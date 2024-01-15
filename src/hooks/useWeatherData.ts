@@ -15,7 +15,6 @@ export const useWeatherData = () => {
             setLoading(true);
             const responseData = await fetchWeatherData(CITIES_LIST);
             const mappedData = mapWeatherData(responseData);
-            console.log({mappedData});
             setData(mappedData);
             setLoading(false);
         } catch (err) {
