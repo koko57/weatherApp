@@ -1,5 +1,5 @@
 {
-  "data": [
+  "list": [
     {
       "coord": {
         "lon": 2.3488,
@@ -37,7 +37,7 @@
       },
       "dt": 1705309759,
       "id": 2988507,
-      "name": "Pariuuus"
+      "name": "Paris"
     },
     {
       "coord": {
