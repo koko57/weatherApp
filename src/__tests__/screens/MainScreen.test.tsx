@@ -1,10 +1,9 @@
 import React from 'react';
 import {rest} from 'msw';
-// @ts-ignore
-import {BASE_URL} from '@env';
 import {server} from '../../../mocks/server';
 import {render, waitFor, fireEvent} from '@testing-library/react-native';
 import {MainScreen} from '../../screens/MainScreen';
+import {BASE_URL} from '../../constants';
 
 // Mock the NotificationModuleInterface
 jest.mock('../../modules/notifications', () => ({

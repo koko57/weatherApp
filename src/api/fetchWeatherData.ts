@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-// @ts-ignore
-import {API_KEY, BASE_URL} from '@env';
+import {API_KEY, BASE_URL} from '../constants';
 
 export const fetchWeatherData = async (groupIds: number[]) => {
     const {data} = await axios.get(BASE_URL, {

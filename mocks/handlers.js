@@ -1,5 +1,5 @@
 import {rest} from 'msw';
-import {BASE_URL} from '@env';
+import {BASE_URL} from '../constants';
 import {mockResponse} from './mockData';
 
 export const handlers = [
