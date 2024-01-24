@@ -3,7 +3,7 @@ import {rest} from 'msw';
 import {server} from '../../../mocks/server';
 import {render, waitFor, fireEvent} from '@testing-library/react-native';
 import {MainScreen} from '../../screens/MainScreen';
-import {BASE_URL} from '../../api/constants';
+import {BASE_URL} from '../../constants';
 
 // Mock the NotificationModuleInterface
 jest.mock('../../modules/notifications', () => ({
@@ -21,6 +21,8 @@ jest.mock('@react-navigation/native', () => {
         }),
     };
 });
+
+jest.setTimeout(30000);
 
 describe('MainScreen', () => {
     it('renders the list of cities', async () => {

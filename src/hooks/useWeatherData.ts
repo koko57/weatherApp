@@ -18,6 +18,7 @@ export const useWeatherData = () => {
             setData(mappedData);
             setLoading(false);
         } catch (err) {
+            console.log(err);
             setError(true);
             setLoading(false);
         }

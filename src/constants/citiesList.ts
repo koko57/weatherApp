@@ -7,4 +7,12 @@ export const CITIES_LIST = [
     1880252, // Singapore
     3094802, // Cracow,
     3081368, // Wroclaw,
+    2643743, // London,
+    3143244, // Oslo,
+    2950159, // Berlin,
+    2618425, // Copenhagen,
+    3169070, // Rome,
+    360502, // Luxor,
+    3435907, // Buenos Aires,
+    3413829, // Reykjavik,
 ];
